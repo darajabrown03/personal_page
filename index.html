@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="my_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Hanalei|PT+Sans&display=swap" rel="stylesheet">
+    <script src="sample_script.js"></script>
+
+    <!-- Page Title: Daraja’s Profile -->
+  </head>
+  <body>
+    <!-- Load an icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- The sidebar -->
+    <!-- <div class="sidebar">
+      <a href="#home">Home</a>
+      <a href="#services">My Art</a>
+      <a href="#contact">Contact</a>
+    </div> -->
+
+
+
+    <h1 id="title" onclick="bigger()">
+      Meet Daraja Brown
+    </h1>
+  <div>
+    <img class="mySlides" src="profile_pic.png">
+    <img class="mySlides" src="profile_pic2.png">
+    <img class="mySlides" src="profile_pic3.png">
+    <img class="mySlides" src="profile_pic4.png">
+    <img class="mySlides" src="profile_pic5.png">
+    <img class="mySlides" src="profile_pic6.png">
+  </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <!-- <img class="mySlides w3-animate-fading" src="profile_pic.png">
+    <img class="mySlides w3-animate-fading" src="profile_pic2.png">
+    <img class="mySlides w3-animate-fading" src="profile_pic3.png">
+    <img class="mySlides w3-animate-fading" src="profile_pic4.png">
+    <img class="mySlides w3-animate-fading" src="profile_pic5.png">
+    <img class="mySlides w3-animate-fading" src="profile_pic6.png"> -->
+
+    <!-- <img src="profile_pic.png" id="profile_pic" onmouseover="bigger()"> -->
+    <!-- <a href="https://www.google.com/"> Go to Google </a> -->
+
+    <!-- Content: -->
+
+    <p> Welcome to my All About Me webpage. My name is Daraja and I hope that you enjoy learning a little bit about me today. So, without further ado, this is me!</p>
+
+<h2>Basic Information:</h2>
+  <p>
+    Age: 16 <br>
+    Hometown: Charlotte, NC <br>
+    Family: Mom, Dad, Two Older Sisters <br>
+    Hobbies: Reading, Drawing, Writing, Watching TV, Hanging Out with Friends <br>
+    Sports: I like playing volleyball and badminton and like watching basketball <br>
+  </p>
+
+
+<h2>My favorite bands are:</h2>
+  <p>
+    The Bomb Digz <br>
+    PRETTYMUCH <br>
+    방탄소년단 (BTS) <br>
+  </p>
+
+<h2>My other favorite music artists are:</h2>
+  <p>
+     Lunay <br>
+     DaBaby <br>
+     Jay Park <br>
+     Bad Bunny <br>
+     A Boogie Wit Da Hoodie <br>
+  </p>
+
+
+<h2>My favorite TV shows are:</h2>
+  <p>
+    Anne With An E <br>
+    Siempre Bruja <br>
+    Accidentally in Love <br>
+    Love O2O <br>
+    Meteor Garden <br>
+    A Love So Beautiful <br>
+  </p>
+
+<h2>My favorite Vines are:</h2>
+  <p>
+    <!-- “I’m finna drop my croissant!” <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzWqfJFxC0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- “Can I please get a waffle?” <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kIIV1kVEej8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- “Road work ahead!” <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6AYv6rV3NXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- “Johnny has nineteen bottles of dishsoap.” <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bp4WxLUeyLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- "My name is Michael with a "B"." <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s5BSAIUSUc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- "What do you have? A knife!" <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5pjpQot6J7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- "I'm starting a kickstarter to put my brother down." <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r4tOIFPwyUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- "Um, I've never been to Oovoo Javer" <br> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_cW-QwnzdI0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+
+
+
+  </body>
+</html>
